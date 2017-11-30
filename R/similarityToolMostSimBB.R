@@ -1,14 +1,3 @@
-#' Most Alike Players Tool
-#'
-#' Finds the players who have the most similar batted ball data in a given batted ball data set.
-#' @param battedBallVals A dataframe of Fangraphs batted ball data. Must be provided by user.
-#' @param numResults Determines how many players who are alike to the specified player are returned. Defaults to 10.
-#' @return dataframe of the most similar players to the specified player and their similarity scores. Scores are relative to the sample, and will not be the same regardless of sample.
-#' @keywords similarityTool
-#' @export
-#' @examples
-#' similarityToolMostSimBB()
-
 similarityToolMostSimBB <- function(battedBallVals, numResults){
   if(numResults > nrow(battedBallVals)) {numResults = nrow(battedBallVals) - 1}
   source("R/similarityToolBB.R")
@@ -24,5 +13,3 @@ similarityToolMostSimBB <- function(battedBallVals, numResults){
   result = result[order(result$Scores),]
   return(result[1:numResults,])
 }
-
-
