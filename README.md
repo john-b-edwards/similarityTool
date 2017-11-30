@@ -7,7 +7,7 @@ This package is designed to generate comparisons for a given player based on the
 
 **How does it work?**
 
-Primer on how it works is coming soon to the FG community, hopefully soon.
+Primer on how it works is coming soon to the FG community.
 
 
 **What does BB or Off mean?**
