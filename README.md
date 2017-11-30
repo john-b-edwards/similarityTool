@@ -59,9 +59,9 @@ package ‘FNN’ was built under R version 3.4.2
 
 ```
 
-Check the documentation and the forthcoming FanGraphs article for how to use the other functions.
+Check the documentation, the forthcoming FanGraphs article, and below for how to use the other functions.
 
-**What does this tool do?**
+**What does each tool do?**
 
 *similarityToolBB.R | similarityToolOff.R*
 
