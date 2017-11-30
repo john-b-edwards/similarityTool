@@ -82,3 +82,11 @@ Acts in reverse of the MostSimBB/Off and finds the players with the highest over
 *similarityToolTwoPlayersBB.R | similarityToolTwoPlayersOff.R*
 
 Finds the similarity score between two players. NOTE THAT THIS SONG REQUIRES A FULL DATASET - because of the normalization techniques used in similarityToolBB/Off, an accurate similarity score will not be generated if the dataset consists only of the two players.
+
+**Hey, it broke! What did I do wrong?**
+
+I have not implemented any kind of error-catching and whatnot yet, though I may get around to it. If you encounter some kind of error, feel free to tweet @ me on twitter with your error (@John_Edwards_) and I will do my best to resolve the issue. This whole project was done in my spare time over the course of a few days, so I do not expect it to be perfect.
+
+**Have you considered doing X?**
+
+No, I probably haven't! I'm an R noob and this is my first big project in R, and I'm sure that there's some mistakes that I've made, or done something inefficiently, etc. etc. If you have any suggestions for the project, be it bug fixes, new features, optimization, etc., again, @ me on twiter (@John_Edwards_) and I see what I can do.
