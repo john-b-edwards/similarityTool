@@ -81,7 +81,7 @@ Acts in reverse of the MostSimBB/Off and finds the players with the highest over
 
 *similarityToolTwoPlayersBB.R | similarityToolTwoPlayersOff.R*
 
-Finds the similarity score between two players. NOTE THAT THIS SONG REQUIRES A FULL DATASET - because of the normalization techniques used in similarityToolBB/Off, an accurate similarity score will not be generated if the dataset consists only of the two players.
+Finds the similarity score between two players. NOTE THAT THIS REQUIRES A FULL DATASET - because of the normalization techniques used in similarityToolBB/Off, an accurate similarity score will not be generated if the dataset consists only of the two players.
 
 **Hey, it broke! What did I do wrong?**
 
