@@ -46,7 +46,7 @@ In both cases, you should end up with a CSV of either BB or Off data. Import the
 From there, use the functions to obtain similarity scores from the dataset. For example, the following command yeilds the most similar players based on offensive peripherals to Nolan Arenado in 2017 among qualified hitters:
 
 ```
-> similarityToolOff(battedBallData, "Nolan Arenado", 5)
+> result <- similarityToolOff(battedBallData, "Nolan Arenado", 5)
 Warning message:
 package ‘FNN’ was built under R version 3.4.2 
 > result
