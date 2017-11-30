@@ -1,0 +1,12 @@
+Package: similarityTool
+Title: Using Fangraphs Data, Generates Similarity Scores for Batters
+Version: 0.1
+Authors@R: c(person("John", "Edwards", role = c("aut", "cre"), email = "edwards1860@gmail.com")
+Author: John Edwards [aut, cre]
+Maintainer: John Edwards <edwards1860@gmail.com>
+Description: In the same vein as Bill James' similarity scores (as seen on Baseball Reference), these toolsets deal with similarity scores for batters, based on either batted ball profiles or batted ball profiles+plate discipline.
+Depends: R (>= 3.4.1)
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1.9000
