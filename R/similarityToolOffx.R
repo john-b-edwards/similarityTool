@@ -1,15 +1,3 @@
-#' Offensive Similarity Tool (Player Unspecified)
-#'
-#' Finds the most similar players to a given player not in a dataset based upon offensive peripherals.
-#' @param battedBallVals A dataframe of Fangraphs offensive peripheral data. Must be provided by user.
-#' @param playerVals A dataframe of a specified player's batted ball data. I.e. PlayerVals = data.frame("LD%" = .xxx, "GB%" = .xxx, "FB%" = .xxx, "Pull%" = .xxx, "Cent%" = .xxx, "Oppo%" = .xxx, "Soft%" = .xxx, "Med%" = .xxx, "Hard%" = .xxx, "HR/FB" = .xxx, check.names=FALSE)
-#' @param numResults Determines how many players who are alike to the specified player are returned. Defaults to 10.
-#' @return dataframe of the most similar players to the specified player and their similarity scores. Scores are relative to the sample, and will not be the same regardless of sample.
-#' @keywords similarityTool
-#' @export
-#' @examples
-#' similarityToolOffx()
-
 similarityToolOffx <- function(battedBallVals, playerVals, numResults){ 
   numResults = numResults + 1 
   names = battedBallVals[,"Name"] 
