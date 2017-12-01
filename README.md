@@ -41,7 +41,7 @@ If using **only** BB functions, simply click "Export data" in the upper right co
 
 If using Off functions, scroll down to the bottom of the screen below the table. In the list on the far left, scroll down and select "BB%", then click on the "To Right" arrow. Repeat this for "K%". Then click on "create custom table", and then click on "Export data".
 
-In both cases, you should end up with a CSV of either BB or Off data. Import the CSV as a dataset by going from `File -> Import Dataset -> From CSV... ` and select the CSV of the batted ball data. Feel free to name it something simple like "battedBallData".
+In both cases, you should end up with a CSV of either BB or Off data. Import the CSV as a dataset by going from `File -> Import Dataset -> From Text (readr)... ` and select the CSV of the batted ball data. Feel free to name it something simple like "battedBallData".
 
 From there, use the functions to obtain similarity scores from the dataset. For example, the following command yeilds the most similar players based on offensive peripherals to Nolan Arenado in 2017 among qualified hitters:
 
