@@ -1,4 +1,4 @@
-similarityToolMostSimOff <- function(battedBallVals, numResults){
+similarityToolMostUniqueOff <- function(battedBallVals, numResults){
   if(numResults > nrow(battedBallVals)) {numResults = nrow(battedBallVals) - 1}
   source("similarityToolOff.R")
   names = battedBallVals[,"Name"]
