@@ -1,4 +1,5 @@
 similarityToolBB <- function(battedBallVals, playerName, numResults = 10){ 
+  numResults = numResults + 1
   if(numResults > nrow(battedBallVals)) {numResults = nrow(battedBallVals) - 1} 
   names = battedBallVals[,"Name"] 
   ndx = which(names == playerName) 
