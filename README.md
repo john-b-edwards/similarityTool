@@ -37,6 +37,8 @@ You now have all the packages you need loaded onto your computer.
 
 Next, you need the data from FanGraphs. For 2017 qualified batters across the MLB, for instance, go here: (http://www.fangraphs.com/leaders.aspx?pos=all&stats=bat&lg=all&qual=y&type=2&season=2017&month=0&season1=2017&ind=0&team=0&rost=0&age=0&filter=&players=0)
 
+**Please note that this function *only* works for single seasons of data or for career numbers. Compatability for data across multiple split seasons is coming soon.**
+
 If using **only** BB functions, simply click "Export data" in the upper right corner of the table.
 
 If using Off functions, scroll down to the bottom of the screen below the table. In the list on the far left, scroll down and select "BB%", then click on the "To Right" arrow. Repeat this for "K%". Then click on "create custom table", and then click on "Export data".
