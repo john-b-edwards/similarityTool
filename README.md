@@ -29,7 +29,7 @@ Get R and Rstudio installed (obviously), then import devtools and load them.
 Then, install the package from this github directory, and load them into Rstudio.
 
 ```
-> install_github('similarityTool', 'Metlover')
+> install_github('Metlover/similarityTool')
 > library('similarityTool')
 ```
 
