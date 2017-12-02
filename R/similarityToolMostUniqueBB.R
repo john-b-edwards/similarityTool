@@ -1,4 +1,4 @@
-similarityToolMostUniqueBB <- function(battedBallVals, numResults){
+similarityToolMostSimBB <- function(battedBallVals, numResults){
   if(numResults > nrow(battedBallVals)) {numResults = nrow(battedBallVals) - 1}
   names = battedBallVals[,"Name"]
   result = data.frame(NULL)
