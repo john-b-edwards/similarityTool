@@ -9,7 +9,7 @@ similarityToolOffx <- function(battedBallVals, playerVals, numResults){
   convertedVals = data.frame(rbind(as.matrix(convertedVals), as.matrix(playerVals))) 
   bbvNorm <- scale(convertedVals)
   results = get.knnx(bbvNorm, as.data.frame(t(bbvNorm[nrow(bbvNorm),])), k=numResults+1, algorithm="kd_tree") 
-  resultingNames = names[results$nn.index[c(2:numResults)],] 
-  endResult = data.frame ("Names" = resultingNames, "Scores" = results$nn.dist[c(2:numResults)], stringsAsFactors = FALSE)
+  resultingNames = names[results$nn.index[c(1:numResults)],] 
+  endResult = data.frame ("Names" = resultingNames, "Scores" = results$nn.dist[c(1:numResults)], stringsAsFactors = FALSE)
   return(endResult) 
 } 
