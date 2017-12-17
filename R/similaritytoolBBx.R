@@ -1,5 +1,7 @@
-similarityToolBBx <- function(battedBallVals, playerVals, numResults=10){
-  numResults = numResults + 1 
+similarityToolBBx <- function(battedBallVals, playerVals, numResults=10, year=2017){
+  numResults = numResults + 1
+  playerName = paste(playerName, as.character(year), sep='')
+  battedBallVals$Name = paste(battedBallVals$Name, as.character(battedBallVals$Season), sep='')
   names = battedBallVals[,"Name"] 
   if(numResults > nrow(battedBallVals)) {numResults = nrow(battedBallVals) - 1} 
   if("FNN" %in% rownames(installed.packages()) == FALSE) {install.packages("FNN")} 
