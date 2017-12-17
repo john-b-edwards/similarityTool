@@ -1,7 +1,8 @@
 similarityToolMostUniqueBB <- function(battedBallVals, numResults){
   if(numResults > nrow(battedBallVals)) {numResults = nrow(battedBallVals) - 1}
-  battedBallVals$Name = paste(battedBallVals$Name, as.character(battedBallVals$Season), sep='')
-  names = battedBallVals[,"Name"]
+  battedBallValsTwo = battedBallVals
+  battedBallValsTwo$Name = paste(battedBallVals$Name, as.character(battedBallVals$Season), sep='')
+  names = battedBallValsTwo[,"Name"]
   result = data.frame(NULL)
   for (row in 1:nrow(names)) {
     name = names[row,]
