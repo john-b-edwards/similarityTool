@@ -7,7 +7,7 @@ Pitching Similarity Tool
 Finds the most similar players to a given player in a dataset based upon pitching peripheral data
 }
 \usage{
-similarityToolOff(battedBallVals, playerName, numResults = 10, year=2017)
+similarityToolPitching(battedBallVals, playerName, numResults = 10, year=2017)
 }
 \arguments{
   \item{battedBallVals}{
