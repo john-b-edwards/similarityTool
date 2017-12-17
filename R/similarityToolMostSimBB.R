@@ -1,7 +1,8 @@
 similarityToolMostSimBB <- function(battedBallVals, numResults){
   if(numResults > nrow(battedBallVals)) {numResults = nrow(battedBallVals) - 1}
-  battedBallVals$Name = paste(battedBallVals$Name, as.character(battedBallVals$Season), sep='')
-  names = battedBallVals[,"Name"]
+  battedBallVals2 = battedBallVals
+  battedBallVals2$Name = paste(battedBallVals$Name, as.character(battedBallVals$Season), sep='')
+  names = battedBallVals2[,"Name"]
   result = data.frame(NULL)
   for (row in 1:nrow(names)) {
     name = names[row,]
