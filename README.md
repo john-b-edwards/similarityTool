@@ -43,7 +43,9 @@ If using **only** batted ball functions, simply click "Export data" in the upper
 
 If using Off functions, scroll down to the bottom of the screen below the table. In the list on the far left, scroll down and select "BB%", then click on the "To Right" arrow. Repeat this for "K%". Then click on "create custom table", and then click on "Export data".
 
-Please note that datasheets with batted ball data and K% and BB% are compatible with ***both Off and BB***. If you are missing BB% and K% data, Off functions will not work.
+If using Pitching functions, select "BB/9" and "K/9" instead of "BB%" and "K%".
+
+Please note that datasheets with batted ball data and K% and BB% are compatible with ***both Off and BB***. If you are missing BB% and K% data, Off functions will not work. Pitching functions require "K/9" and "BB/9" to work properly.
 
 In both cases, you should end up with a CSV of either BB or Off data. Import the CSV as a dataset by going from `File -> Import Dataset -> From Text (readr)... ` and select the CSV of the batted ball data. Feel free to name it something simple like "battedBallData".
 
@@ -98,4 +100,4 @@ No, I probably haven't! I'm an R noob and this is my first big project in R, and
 **Future Changes**
 
 * ~~Functionality to compare players across multiple seasons~~ done as of 12/17/17
-* Pitcher comparisons (coming soon)
+* ~~Pitcher comparisons (coming soon)~~ also done as of 12/17/17
