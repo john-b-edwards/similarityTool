@@ -5,8 +5,6 @@ similarityToolMostUniqueBB <- function(battedBallVals, numResults){
   result = data.frame(NULL)
   for (row in 1:nrow(names)) {
     name = names[row,]
-    year = years[row,]
-    result = rbind(result, similarityToolBB(battedBallVals, toString(name), 1, year))
     result = rbind(result, similarityToolOff(battedBallVals, substr(toString(name),0,nchar(toString(name))-4), 1, strtoi(substr(toString(name),nchar(toString(name))-3,nchar(toString(name))))))
   }
   result$OriginalPlayer = as.data.frame(names)
