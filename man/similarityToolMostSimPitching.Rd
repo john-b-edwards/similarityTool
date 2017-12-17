@@ -7,7 +7,7 @@ Most Similar Players per Pitching Peripherals
 Finds the players who are most similar to any other player in a given dataset of pitching peripheral data from FanGraphs
 }
 \usage{
-similarityToolMostSimOff(battedBallVals, numResults = 10)
+similarityToolMostSimPitching(battedBallVals, numResults = 10)
 }
 \arguments{
   \item{battedBallVals}{
