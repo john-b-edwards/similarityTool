@@ -7,7 +7,7 @@ Batted Ball Similarity Tool
 Finds the most similar players to a given player in a dataset based solely upon batted ball data.
 }
 \usage{
-similarityToolBB(battedBallVals, playerName, numResults = 10)
+similarityToolBB(battedBallVals, playerName, numResults = 10, year=2017)
 }
 \arguments{
   \item{battedBallVals}{
@@ -18,6 +18,9 @@ A string with the name of a player in the format "Firstname Lastname"
 }
   \item{numResults}{
 An integer. Defaults to 10.
+}
+  \item{year}{
+An integer. Defaults to 2017.
 }
 }
 \details{
