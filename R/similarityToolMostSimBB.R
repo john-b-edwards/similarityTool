@@ -5,7 +5,7 @@ similarityToolMostSimBB <- function(battedBallVals, numResults){
   result = data.frame(NULL)
   for (row in 1:nrow(names)) {
     name = names[row,]
-    result = rbind(result, similarityToolOff(battedBallVals, substr(toString(name),0,nchar(toString(name))-4), 1, strtoi(substr(toString(name),nchar(toString(name))-3,nchar(toString(name))))))
+    result = rbind(result, similarityToolBB(battedBallVals, substr(toString(name),0,nchar(toString(name))-4), 1, strtoi(substr(toString(name),nchar(toString(name))-3,nchar(toString(name))))))
   }
   result$OriginalPlayer = as.data.frame(names)
   names(result)[names(result)=="Name"] <- "Most Similar Player"
