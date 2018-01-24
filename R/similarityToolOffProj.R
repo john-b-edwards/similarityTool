@@ -4,8 +4,6 @@ similarityToolOffProj <- function(battedBallVals, playerVals, numResults=10, yea
   names = battedBallVals[,"Name"] 
   if(numResults > nrow(battedBallVals)) {numResults = nrow(battedBallVals) - 1}
   convertedVals<- battedBallVals[,c('LD%','GB%','FB%','Pull%','Cent%','Oppo%','Soft%','Med%','Hard%', 'HR/FB', 'K%', 'BB%')]
-  print(ncol(convertedVals))
-  print(ncol(playerVals))
   convertedVals = data.frame(rbind(as.matrix(convertedVals), as.matrix(playerVals))) 
   bbvNorm <- scale(convertedVals) 
   results = get.knnx(bbvNorm, as.data.frame(t(bbvNorm[nrow(bbvNorm),])), k=numResults+1, algorithm="kd_tree") 
