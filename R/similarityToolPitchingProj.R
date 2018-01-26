@@ -3,7 +3,7 @@ similarityToolPitchingProj <- function(battedBallVals, playerVals, numResults=10
   numResults = numResults + 1
   names = battedBallVals[,"Name"] 
   if(numResults > nrow(battedBallVals)) {numResults = nrow(battedBallVals) - 1}
-  convertedVals<- battedBallVals[,c('LD%','GB%','FB%','Pull%','Cent%','Oppo%','Soft%','Med%','Hard%', 'HR/FB', 'K/9', 'BB/9')]
+  convertedVals<- battedBallVals[,c('LD%','GB%','FB%','Pull%','Cent%','Oppo%','Soft%','Med%','Hard%', 'HR/FB', 'K/9', 'BB/9','IFFB%')]
   convertedVals = data.frame(rbind(as.matrix(convertedVals), as.matrix(playerVals))) 
   bbvNorm <- scale(convertedVals) 
   results = get.knnx(bbvNorm, as.data.frame(t(bbvNorm[nrow(bbvNorm),])), k=numResults+1, algorithm="kd_tree") 
