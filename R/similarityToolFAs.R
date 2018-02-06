@@ -1,7 +1,7 @@
 similarityToolFAs <- function(battedBallVals, playerVals, numResults=10){
   require(FNN)
   numResults = numResults + 1
-  names = battedBallVals[,"Name"] 
+  names = battedBallVals[,"PLAYER"] 
   if(numResults > nrow(battedBallVals)) {numResults = nrow(battedBallVals) - 1}
   convertedVals<- battedBallVals[,c('AGE','WAR','CAREERWAR')]
   convertedVals = data.frame(rbind(as.matrix(convertedVals), as.matrix(playerVals))) 
