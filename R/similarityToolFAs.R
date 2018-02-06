@@ -1,4 +1,4 @@
-similarityToolOffProj <- function(battedBallVals, playerVals, numResults=10){
+similarityToolFAs <- function(battedBallVals, playerVals, numResults=10){
   require(FNN)
   numResults = numResults + 1
   names = battedBallVals[,"Name"] 
